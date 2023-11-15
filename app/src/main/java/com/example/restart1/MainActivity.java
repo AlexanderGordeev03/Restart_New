@@ -5,14 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-    Cat MyCat;
+    Calculators myCalculators;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MyCat = new Cat(4,"Barsik","Siberian","Silver");
-        MyCat.talk();
-        Cat cat2 = new Cat(9,"Murzik","RusBlue","Silver");
-        cat2.talk();
+        myCalculators = new Calculators(100,"MK-103","Programming",15000);
+        myCalculators.talk();
+        Calculators calculators2 = new Calculators(250,"Cassio","Graphical",25000);
+        calculators2.talk();
+        Mechanical Ariphmometer = new Mechanical(4, "Iron Felix", "Ariphmometer",7500);
+        Ariphmometer.talk();
     }
 }
